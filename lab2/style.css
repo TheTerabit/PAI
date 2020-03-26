@@ -1,0 +1,123 @@
+html {margin: 0;padding: 0;}
+body {margin: 0;padding: 0;}
+p {margin: 0;padding: 0;}
+* {box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;}
+header{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;}
+header p {
+    height: 75px;
+    width: 75px;
+    background-color: #bbb;
+    border-radius: 100%;
+    border: 3px solid black;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 32px;
+}
+header nav {
+    flex-grow: 2;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav a {
+    width: 75px;
+}
+main {display: flex;
+    flex-direction: row;
+    padding: 15px;}
+
+main article {
+    margin: 15px;
+
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+main article h3 {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    background-color: #bbb;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+
+}
+main article p {
+    text-align: justify;
+    padding: 15px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        background-color: #bbb;
+        border-top: 2px solid black;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        justify-self: flex-end;}
+
+footer p + p {
+    font-weight: bold;
+}
+img {
+    height: 75px;
+    display: none;
+}
+@media all and (max-width: 900px) {
+    main {
+    flex-wrap: wrap;
+    }
+    header {
+        justify-content: space-between;
+    }
+    header h1 {
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    header img {
+    display: block;
+    }
+
+   }
+
+
+
+
